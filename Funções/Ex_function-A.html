@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+  <script>
+  let valores = [1, 5, 'teste', 14, 10];
+
+  let sum = soma(valores);
+
+  alert(sum);
+
+  function soma(numeros) {
+      let resultado = 0;
+      for (let i = 0; i < numeros.length; i++) {
+          if (!isNaN(numeros[i])) {
+            resultado += numeros[i];
+          }
+      }
+      return resultado;
+  }
+  </script>
+</html>
